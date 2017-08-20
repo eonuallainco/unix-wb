@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 guessed=0
-actual=`wc -l < ./guessinggame.sh`
+actual=`ls -l|wc -l`
 
 function guess {
   read guessed
@@ -18,5 +18,5 @@ function guess {
   echo "Correct! Thanks for playing"
 }
 
-echo "Guess how many lines are in the file guessinggame.sh"
+echo "Guess how many files are in the current directory"
 guess
